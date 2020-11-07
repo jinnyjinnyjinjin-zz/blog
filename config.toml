@@ -638,8 +638,8 @@ uglyURLs = false
     #       has a higher priority than here
 
     ## Disqus
-    enableDisqus = true
-    disqusShortname = "jinnyjinnyjinjin"
+    enableDisqus = false
+    disqusShortname = ""
 
     ## Valine
     enableValine = false
