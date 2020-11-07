@@ -1,6 +1,7 @@
 ---
 title: "[자료구조]Heap(힙)"
 date: 2020-11-07T17:47:51+09:00
+tags: [자료구조]
 draft: false
 ---
 ### 이진 트리의 한 종류 (이진 힙 - binary heap)
