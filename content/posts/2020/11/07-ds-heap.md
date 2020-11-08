@@ -1,5 +1,5 @@
 ---
-title: "[자료구조]Heap(힙)"
+title: "[자료구조] Heap(힙)"
 date: 2020-11-07T17:47:51+09:00
 tags: [자료구조]
 draft: false
