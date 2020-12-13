@@ -5,22 +5,25 @@ tags: [Network]
 draft: false
 ---
 ## Http 란?
-`Hyper Text Transfer Protocol` 의 약자로 인터넷 통신 규약 입니다. 
+`Hyper Text Transfer Protocol` 의 약자로 `TCP/IP` 프로토콜 중 하나입니다.
 접속하고자 하는 주소 앞에 `http` 를 붙여 줌으로써, `나는 지금 http 형식으로 요청 하는거야~` 라는 클라이언트의 요청에 서버는 `아~ 이 요청은 http 형식이구나~` 라고 파악하고 `http` 형식으로 해석하여 클라이언트가 요청한 정보를 전달합니다.
 
 ## Https 란?
-기존의 `http` 에 보안이라는 뜻의 `Secure`의 `s`를 붙여 보안 기능을 제공합니다.
+HTTPS 는 새로운 애플리케이션의 계층 프로토콜이 아닌 HTTP 통신을 하는 소켓 부분을 `SSL(Secure Socket Layer)` 이나 `TLS(Transport Layer Security)` 라는 프로토콜로 대체한는 것입니다.
+즉, SSL 또는 TLS 라는 껍질을 덮어쓴 HTTP가 HTTPS 입니다.
+
+> 출처: [도서] 그림으로 배우는 Http & Network Basic
 
 ## Https 필요성
 1. 내가 사이트에 보내는 정보들을 제 3자가 보지 못하게 합니다.
 2. 접속한 사이트가 믿을 만한 곳인지를 알려줍니다.
 
 ## Https 동작 과정
-[1. Hand shake](#1.-sand-shake)   
-[2. 인증서 검증](#2.-인증서-검증)   
-[3. 데이터 암호/복호화](#3.-데이터-암호/복호화)
+[1. Hand shake](#1-hand-shake)   
+[2. 인증서 검증](#2-인증서-검증)   
+[3. 데이터 암호/복호화](#3-데이터-암호/복호화)
 ### 1. Hand shake
-우리가 브라우저 주소 입력창에 `http://` 주소를 입력하면 입력한 당사자(클라이언트)와 접속하려는 해당 주소의 서버는 서로의 신뢰 관계를 형성하기 위해 핸드 쉐이크 과정을 수행 합니다. 
+우리가 브라우저 주소 입력창에 `https://` 주소를 입력하면 입력한 당사자(클라이언트)와 접속하려는 해당 주소의 서버는 서로의 신뢰 관계를 형성하기 위해 핸드 쉐이크 과정을 수행 합니다. 
 
 1. 클라이언트가 랜덤 데이터를 생성하고 서버에 전달 합니다.
 
@@ -41,8 +44,10 @@ draft: false
 
 <p align="center">
     <img src="/images/2020/12/CAs.png" alt="cas" title="CA 기관" width="40%"/><br>
-    <figurecaption>CA 기관 [출처: Wikipedia]</figurecaption>
+    <figurecaption>CA 기관 목록</figurecaption>
 </p>
+
+> [출처: Wikipedia]
 
 1. 서버로부터 전달 받은 인증서는 CA 의 개인키로 암호화되어 있습니다. 브라우저에 내장된 CA 공개키를 가지고 인증서를 복호화하여 검증합니다.
 
