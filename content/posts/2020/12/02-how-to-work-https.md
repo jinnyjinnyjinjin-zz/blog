@@ -2,7 +2,7 @@
 title: "[Network] https 동작 과정"
 date: 2020-12-03T18:35:29+09:00
 tags: [Network]
-draft: true
+draft: false
 ---
 ## Http 란?
 `Hyper Text Transfer Protocol` 의 약자로 인터넷 통신 규약 입니다. 

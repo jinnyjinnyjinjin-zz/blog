@@ -2,7 +2,7 @@
 title: "IDE 에서는 왜 Lombok 플러그인을 설치해야 할까?"
 date: 2020-12-03T18:47:18+09:00
 tags: [Lombok]
-draft: true
+draft: false
 ---
 `lombok` 은 개발을 참 편리하게 해 주는 라이브러리 중 하나다.   
 어제 intelliJ 의 새로운 버전이 릴리즈돼서 바로 업데이트를 했다. (난 업데이트를 해야 직성이 풀린다..)
